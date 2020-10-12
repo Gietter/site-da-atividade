@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Atv1</title>
+    
+    <script>
+        let preco, qtd, contValorGasto, valorGasto
+        for(let i=1; i<5; i++)
+    {
+        preco = parseFloat(prompt('Digite o valor' + i))
+        qtd = parseFloat(prompt('Digite a quantidade'+ i))
+
+        valorGasto = preco*qtd
+        if(valorGasto>100)
+            contValorGasto++
+    }
+
+        console.log('A quantidade de produtos que custam mais que R$ 100.00.')
+
+        let precoCusto, precoVenda, tipo, lucro, qtdCalcados = 0
+        for(let i=0; i<3; i++){
+            precoCusto = parseFloat(prompt('Digite preço de custo'))
+            precoVenda = parseFloat(prompt('Digite preço de Venda'))
+            tipo = prompt('V - vestuário e C - calçado')
+
+            lucro = precoVenda - precoCusto
+            console.log('Lucro: R$' + lucro)
+            
+            if(tipo == 'C'){
+                qtdCalcados++
+        }
+    }
+            console.log('Quantidade de calçados:' +qtdCalcados)
+
+        let numero = parseInt(prompt('Informe um número'))
+        let resultado = 0 
+        for (let i=1; i<=10; i++){
+            resultado = numero * 1
+            console.log(numero + ' x '+ i +' = '+ resultado)
+        }
+        let x = 0
+        for(let i=50; i<=100; i+=50)
+        {
+           x += i
+        }
+        console.log('X = ' + x)
+       
+        let y = 0
+        for(let i=1; i<=20; i++)
+            y += (x*i)
+
+        console.log('Y = ' + y)
+
+        let z = y/x
+        console.log('Z = ' + z)
+
+    </script>
+    </center>
+    <body>
+
+
+
+    <html>
